@@ -1,0 +1,65 @@
+@import "tailwindcss";
+
+/* fonts  */
+@font-face {
+  font-family: dana-semibold;
+  font-style: normal;
+  font-weight: 200 700;
+  font-display: swap;
+  src: url("/Assets/Fonts/Dana/woff2/DanaFaNum-DemiBold.woff2") format("woff2");
+}
+@font-face {
+  font-family: dana-medium;
+  font-style: normal;
+  font-weight: 200 700;
+  font-display: swap;
+  src: url("/Assets/Fonts/Dana/woff2/DanaFaNum-Medium.woff2") format("woff2");
+}
+@font-face {
+  font-family: dana-regular;
+  font-style: normal;
+  font-weight: 200 700;
+  font-display: swap;
+  src: url("/Assets/Fonts/Dana/woff2/DanaFaNum-Regular.woff2") format("woff2");
+}
+@font-face {
+  font-family: Morabba-Bold;
+  font-style: normal;
+  font-weight: 200 700;
+  font-display: swap;
+  src: url("/Assets/Fonts/Morabba/woff2/Morabba-Bold.woff2") format("woff2");
+}
+@font-face {
+  font-family: Morabba-Medium;
+  font-style: normal;
+  font-weight: 200 700;
+  font-display: swap;
+  src: url("/Assets/Fonts/Morabba/woff2/Morabba-Medium.woff2") format("woff2");
+}
+@font-face {
+  font-family: Morabba-Light;
+  font-style: normal;
+  font-weight: 200 700;
+  font-display: swap;
+  src: url("/Assets/Fonts/Morabba/woff2/Morabba-Light.woff2") format("woff2");
+}
+
+@theme {
+  /* fonts  */
+  --font-dana-bold: dana-semibold;
+  --font-dana-medium: dana-medium;
+  --font-dana-regular: dana-regular;
+
+  /* colors  */
+  --color-brown-900: #634832;
+  --color-brown-600: #967259;
+  --color-brown-300: #DBC1AC;
+  --color-brown-100: #ECE0D1;
+
+  /* shadows  */
+  --shadow-darkmode: 0px 1px 10px 0px #3F3F46;
+  --shadow-lightmode: 0px 1px 10px 0px #FFFFFF;
+
+
+
+}
