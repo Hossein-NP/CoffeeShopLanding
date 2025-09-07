@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fa" dir="rtl">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,7 +7,7 @@
   <title>Coffee Shop</title>
   <link rel="stylesheet" href="./src/output.css">
 </head>
-<body>
+<body class="bg-gray-900 h-full">
   
   <!-- SVG  -->
   <svg class="hidden">
@@ -134,6 +134,30 @@
   </svg>
   
   <!-- header  -->
-  <h1 class="text-4xl font-bold">hello</h1>
+  <header class="w-[90%] mx-auto h-24 mt-9 rounded-3xl bg-black/50 backdrop-blur-md">
+    <!-- navigation container  -->
+    <div class="flex items-center h-full">
+      <!-- navigation right section  -->
+      <nav class="flex ">
+        <!-- shop logo  -->
+        <div class="w-[59px] h-[56px]">
+          <svg class="w-[59px] h-[56px]">
+            <use href="#app-logo"></use>
+          </svg>
+        </div>
+        <!-- menu items  -->
+        <ul class="flex items-center gap-9 mr-9 text-gray-300">
+          <li><a href="">صفحه اصلی</a></li>
+          <li><a href="">فروشگاه</a></li>
+          <li><a href="">دیکشنری</a></li>
+          <li><a href="">بلاگ</a></li>
+          <li><a href="">درباره ما</a></li>
+          <li><a href="">تماس با ما</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+
 </body>
 </html>
