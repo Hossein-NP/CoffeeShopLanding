@@ -75,6 +75,19 @@
       <path d="M97.2191 32.565C97.1608 32.8564 97.2191 33.2643 97.2774 33.614C97.3939 33.9054 97.3939 38.3928 97.3939 43.4631C97.3356 49.4075 97.5688 53.079 97.9767 53.5452C98.4429 54.128 100.658 54.3029 106.369 54.3029H114.178L115.169 52.2631C116.393 49.7571 115.985 49.2909 113.595 50.5148C112.43 51.0975 110.74 51.3889 108.758 51.2724L105.728 51.0975L105.553 47.7174L105.378 44.3955H108.234C111.206 44.3955 112.43 43.6962 112.43 41.9478C112.43 41.0737 111.905 40.8988 108.875 40.8988H105.378L105.553 38.1015C105.728 35.071 106.077 34.8961 110.798 35.8286C112.663 36.2365 113.071 36.12 113.595 35.071C114.994 32.4485 114.236 32.1571 105.436 32.1571C100.949 32.1571 97.2191 32.3319 97.2191 32.565Z" fill="#D1D5DB"/>
       <path d="M119.307 41.8896C119.365 47.3094 119.598 52.2631 119.715 52.9625C120.006 54.3029 120.181 54.3029 128.223 54.3029H136.382L137.256 52.2631C138.364 49.524 138.364 49.524 135.974 50.5148C133.41 51.5638 128.515 51.6803 127.757 50.6313C127.466 50.2816 127.291 48.9995 127.349 47.8922C127.407 46.7849 127.524 45.5028 127.524 45.0949C127.582 44.6286 128.573 44.3955 130.438 44.3955C133.41 44.3955 134.984 43.3465 134.401 41.8313C134.168 41.2485 133.002 40.8988 130.671 40.7823L127.291 40.6074L127.116 38.5094C126.883 35.4789 127.932 34.7796 131.72 35.5955C134.401 36.1783 134.809 36.12 135.508 35.2458C135.974 34.663 136.266 33.7889 136.149 33.3226C136.033 32.6233 134.517 32.4485 127.582 32.2736L119.132 32.0988L119.307 41.8896Z" fill="#D1D5DB"/>
     </symbol>
+    <!-- shoping card icon  -->
+    <symbol id="shoping-card" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+      <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 0 0-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 0 0-16.536-1.84M7.5 14.25 5.106 5.272M6 20.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Zm12.75 0a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z" />
+    </symbol>
+    <!-- moon icon  -->
+    <symbol id="moon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+      <path stroke-linecap="round" stroke-linejoin="round" d="M21.752 15.002A9.72 9.72 0 0 1 18 15.75c-5.385 0-9.75-4.365-9.75-9.75 0-1.33.266-2.597.748-3.752A9.753 9.753 0 0 0 3 11.25C3 16.635 7.365 21 12.75 21a9.753 9.753 0 0 0 9.002-5.998Z" />
+    </symbol>
+    <!-- login  -->
+    <symbol id="login" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+      <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 9V5.25A2.25 2.25 0 0 0 13.5 3h-6a2.25 2.25 0 0 0-2.25 2.25v13.5A2.25 2.25 0 0 0 7.5 21h6a2.25 2.25 0 0 0 2.25-2.25V15M12 9l-3 3m0 0 3 3m-3-3h12.75" />
+    </symbol>
+
     <!-- Service icons  -->
     <!-- coffee-packet  -->
     <symbol id="coffee-packet" viewBox="0 0 52 73" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -136,7 +149,7 @@
   <!-- header  -->
   <header class="w-[90%] mx-auto h-24 mt-9 rounded-3xl bg-black/50 backdrop-blur-[6px]">
     <!-- navigation container  -->
-    <div class="flex items-center h-full px-10 py-5">
+    <div class="flex items-center justify-between h-full px-10 py-5">
       <!-- navigation right section  -->
       <nav class="flex ">
         <!-- shop logo  -->
@@ -155,7 +168,32 @@
           <li><a href="">تماس با ما</a></li>
         </ul>
       </nav>
+      <!-- navigation left section  -->
+      <div class="flex items-center divide-x-2 divide-white/20">
+        <!-- icons  -->
+        <div class="flex items-center gap-5 px-6 text-orange-200">
+          <!-- shopping-cart -->
+          <svg class="size-[34px] cursor-pointer hover:text-orange-300 transition">
+            <use href="#shoping-card"></use>
+          </svg>
+          <!-- dark mode icon -->
+          <svg class="size-[34px] cursor-pointer hover:text-orange-300 transition">
+            <use href="#moon"></use>
+          </svg>
+        </div>
+
+        <!-- login -->
+        <div class="flex items-center gap-2 px-6 text-orange-200 cursor-pointer hover:text-orange-300 transition">
+          <svg class="size-[34px]">
+            <use href="#login"></use>
+          </svg>
+          <span>ورود | ثبت‌نام</span>
+        </div>
+      </div>
+
     </div>
+    
+
   </header>
 
 
