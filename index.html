@@ -7,7 +7,7 @@
   <title>Coffee Shop</title>
   <link rel="stylesheet" href="./src/output.css">
 </head>
-<body class="bg-gray-900 h-full">
+<body class="h-full">
   
   <!-- SVG  -->
   <svg class="hidden">
@@ -147,7 +147,7 @@
   </svg>
   
   <!-- header  -->
-  <header class="w-[90%] mx-auto h-24 mt-9 rounded-3xl bg-black/50 backdrop-blur-[6px]">
+  <header class="relative z-1 w-[90%] mx-auto h-24 mt-9 rounded-3xl bg-black/50 backdrop-blur-[6px]">
     <!-- navigation container  -->
     <div class="flex items-center justify-between h-full px-10 py-5">
       <!-- navigation right section  -->
@@ -159,7 +159,7 @@
           </svg>
         </div>
         <!-- menu items  -->
-        <ul class="flex items-center gap-9 mr-9 font-dana-regular text-xl text-gray-300">
+        <ul class="flex items-center gap-9 mr-9 font-dana-regular text-xl text-gray-300 *:hover:text-orange-300 transition">
           <li><a aria-current="main-page" class="aria-[current=main-page]:text-orange-200 aria-[current=main-page]:font-dana-medium" href="">صفحه اصلی</a></li>
           <li><a href="">فروشگاه</a></li>
           <li><a href="">دیکشنری</a></li>
@@ -192,10 +192,13 @@
       </div>
 
     </div>
-    
-
   </header>
-
+  <!-- header bg  -->
+  <div class="absolute z-0 top-0">
+    <img src="Assets/img/headerBgDesktop.webp" alt="">
+    <!-- curve  -->
+    <div class="absolute w-[200px] h-[100px] mx-auto bg-gray-700"></div>
+  </div>
 
 </body>
 </html>

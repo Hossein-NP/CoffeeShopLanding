@@ -12,6 +12,7 @@
     --color-orange-400: oklch(75% 0.183 55.934);
     --color-blue-400: oklch(70.7% 0.165 254.624);
     --color-gray-300: oklch(87.2% 0.01 258.338);
+    --color-gray-700: oklch(37.3% 0.034 259.733);
     --color-gray-900: oklch(21% 0.034 264.665);
     --color-black: #000;
     --color-white: #fff;
@@ -177,6 +178,21 @@
   }
 }
 @layer utilities {
+  .absolute {
+    position: absolute;
+  }
+  .relative {
+    position: relative;
+  }
+  .top-0 {
+    top: calc(var(--spacing) * 0);
+  }
+  .z-0 {
+    z-index: 0;
+  }
+  .z-1 {
+    z-index: 1;
+  }
   .container {
     width: 100%;
     @media (width >= 40rem) {
@@ -250,6 +266,9 @@
   .h-\[56px\] {
     height: 56px;
   }
+  .h-\[100px\] {
+    height: 100px;
+  }
   .h-full {
     height: 100%;
   }
@@ -258,6 +277,9 @@
   }
   .w-\[90\%\] {
     width: 90%;
+  }
+  .w-\[200px\] {
+    width: 200px;
   }
   .border-collapse {
     border-collapse: collapse;
@@ -370,6 +392,9 @@
       background-color: color-mix(in oklab, var(--color-black) 50%, transparent);
     }
   }
+  .bg-gray-700 {
+    background-color: var(--color-gray-700);
+  }
   .bg-gray-900 {
     background-color: var(--color-gray-900);
   }
@@ -427,6 +452,24 @@
     &:hover {
       @media (hover: hover) {
         color: var(--color-orange-400);
+      }
+    }
+  }
+  .\*\:hover\:text-orange-200 {
+    :is(& > *) {
+      &:hover {
+        @media (hover: hover) {
+          color: var(--color-orange-200);
+        }
+      }
+    }
+  }
+  .\*\:hover\:text-orange-300 {
+    :is(& > *) {
+      &:hover {
+        @media (hover: hover) {
+          color: var(--color-orange-300);
+        }
       }
     }
   }
