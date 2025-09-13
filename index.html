@@ -149,34 +149,56 @@
   </symbol>
   </svg>
 
-  <!-- header bg  -->
-
   <!-- mobile first  -->
   <!-- header  -->
-  <header class="relative h-16 *:h-full">
+  <header class="h-16 *:h-full">
 
     <div class="container">
-      <nav class="flex items-center justify-between h-full px-4 py-3">
+      <div class="flex items-center justify-between h-full px-4 py-3">
         <!-- hamburger menu icon  -->
-        <div class="size-6 *:block *:h-[1px] px-0.5 py-1 cursor-pointer flex flex-col justify-between *:bg-zinc-700 *:dark:bg-white">
+        <div class="size-6 *:block *:h-[1px] px-0.5 py-1 flex flex-col justify-between *:bg-zinc-700 *:dark:bg-white">
           <span></span><span></span><span></span>
         </div>
         <!-- type icon  -->
-        <div class="cursor-pointer">
+        <div class="">
           <svg class="w-[100px] h-10">
             <use href="#app-logo-type"></use>
           </svg>
         </div>
         <!-- shoping card  -->
-        <div class="cursor-pointer">
+        <div class="">
           <svg class="size-6 text-zinc-700 dark:text-white">
             <use href="#shoping-card"></use>
           </svg>
         </div>
-      </nav>
+      </div>
     </div>
 
+    <!-- mobile menu  -->
+    <nav class="absolute top-0 bottom-0 z-10 w-64 px-4 bg-white ">
+        <!-- nav-top-section  -->
+        <section class="nav-top-section flex items-center justify-between pt-3 pb-[20px]  border-b border-divider-light">
+          <!-- icons  -->
+          <div class="flex items-center gap-4">
+            <img src="Assets/Svg/app-logo.svg" alt="">
+            <img src="Assets/Svg/app-logo-type.svg" alt="">
+          </div>
+          <!-- close btn icon  -->
+          <div>
+            <svg class="size-6 text-zinc-700"><use href="#x-mark"></use></svg>
+          </div>
+        </section>
+        <!-- nav-middle-section -->
+        <section class="nav-middle-section"></section>
+        <!-- nav-bottom-section -->
+        <section class="nav-bottom-section"></section>
+    </nav>
+
+    <!-- overlay bg  -->
+    <div class="absolute top-0 bottom-0 w-full bg-black/40 backdrop-blur-[0.6px] z-0"></div>
+
   </header>
+
 
 </body>
 </html>
