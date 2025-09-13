@@ -67,3 +67,7 @@
 
 
 }
+
+.active {
+  @apply text-orange-300 
+}

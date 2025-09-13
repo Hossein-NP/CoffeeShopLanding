@@ -1,0 +1,14 @@
+/* nav-middle-section  */
+/* >>> links  */
+.nav-middle-section  a {
+  display: inline-block;
+  width: 100%;
+}
+
+.nav-middle-section ul li {
+  transition: all 0.2s ease;
+  -webkit-transition: all 0.2s ease;
+  -moz-transition: all 0.2s ease;
+  -ms-transition: all 0.2s ease;
+  -o-transition: all 0.2s ease;
+}
