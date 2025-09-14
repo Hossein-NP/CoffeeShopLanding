@@ -8,7 +8,6 @@ menuLinks.forEach((link) => {
       i.classList.remove("active");
       if(shopItem.classList.contains("active")){
         submenu.classList.remove("open");
-        chevron.classList.remove("rotate-180");
       }
     });
     link.classList.add("active");
@@ -35,3 +34,33 @@ shopBtn.addEventListener("click", (e) => {
   chevron.classList.toggle("rotate-180");
 });
 
+const hamburgerMenu = document.querySelector(".hamburger-menu");
+const overLay = document.querySelector(".overlay");
+const mobileNav = document.querySelector(".mobile-nav");
+const xIcon = document.querySelector(".nav-top-section svg:first-child");
+
+function openMenu() {
+  mobileNav.classList.add("open-nav");
+  mobileNav.classList.remove("close-nav");
+  overLay.classList.add("overlay-active");
+  overLay.classList.remove("invisible");
+  overLay.classList.remove("opacity-0");
+}
+
+function closeMenu() {
+  mobileNav.classList.remove("open-nav");
+  mobileNav.classList.add("close-nav");
+  overLay.classList.remove("overlay-active");
+  overLay.classList.add("invisible");
+}
+
+hamburgerMenu.addEventListener("click", () => {
+  if (mobileNav.classList.contains("close-nav")) {
+    openMenu();
+  } else {
+    closeMenu();
+  }
+});
+
+xIcon.addEventListener("click", closeMenu);
+overLay.addEventListener("click", closeMenu); // کلیک روی بک‌گراند هم منو رو ببنده

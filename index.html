@@ -186,8 +186,8 @@
     <div class="container">
       <div class="flex items-center justify-between h-full px-4 py-3">
         <!-- hamburger menu icon  -->
-        <div class="size-6 *:block *:h-[1px] px-0.5 py-1 flex flex-col justify-between *:bg-zinc-700 *:dark:bg-white">
-          <span></span><span></span><span></span>
+        <div aria-roledescription="hamburger menu" class="hamburger-menu size-6 *:block *:h-[1px] px-0.5 py-1 flex flex-col justify-between *:bg-zinc-700 *:dark:bg-white">
+          <button></button><button></button><button></button>
         </div>
         <!-- type icon  -->
         <div class="">
@@ -196,16 +196,18 @@
           </svg>
         </div>
         <!-- shoping card  -->
-        <div class="">
-          <svg class="size-6 text-zinc-700 dark:text-white">
-            <use href="#shoping-card"></use>
-          </svg>
+        <div class="flex items-center justify-center">
+          <button aria-label="shoping card">
+            <svg class="size-6 text-zinc-700 dark:text-white">
+              <use href="#shoping-card"></use>
+            </svg>
+          </button>
         </div>
       </div>
     </div>
 
     <!-- mobile menu  -->
-    <nav class="absolute top-0 bottom-0 z-10 w-64 px-4 bg-white dark:bg-zinc-700 ">
+    <nav class="mobile-nav close-nav absolute top-0 bottom-0 z-10 w-64 px-4 bg-white dark:bg-zinc-700 transition-all duration-300">
         <!-- nav-top-section  -->
         <section class="nav-top-section flex items-center justify-between pt-3 pb-[20px]  border-b border-divider-light">
           <!-- icons  -->
@@ -214,12 +216,14 @@
             <img src="Assets/Svg/app-logo-type.svg" alt="">
           </div>
           <!-- close btn icon  -->
-          <div>
-            <svg class="size-6 text-zinc-700 dark:bg-white"><use href="#x-mark"></use></svg>
+          <div class="flex items-center justify-center">
+            <button>
+              <svg class="size-6 text-zinc-700 dark:bg-white"><use href="#x-mark"></use></svg>
+            </button>
           </div>
         </section>
         <!-- nav-middle-section -->
-        <section class="nav-middle-section">
+        <section class="nav-middle-section border-b border-divider-light">
           <ul class="flex flex-col gap-6 pt-6 pb-8 text-zinc-700 dark:text-white font-dana-regular text-base *:active:text-orange-300">
             <li class="mob_nav-item flex items-center gap-2 h-10 pr-[10px] rounded-md text-orange-300 bg-orange-200/20">
               <a href="" class="order-2">صفحه اصلی</a>
@@ -235,14 +239,13 @@
                 <svg class="w-4 h-4 order-3 mr-auto transition-transform duration-400"><use href="#chevron-down"></use></svg>
               </button>
               <!-- ساب‌منو -->
-              <!-- ساب‌منو -->
               <ul class="mob_shop-sub overflow-hidden max-h-0 transition-[max-height] duration-100 flex flex-col gap-[1px] mr-8">
-                <li class="submenu-item"><a href="#">قهوه ویژه</a></li>
-                <li class="submenu-item"><a href="#">ویژه در سطح جهانی</a></li>
-                <li class="submenu-item"><a href="#">قهوه درجه یک</a></li>
-                <li class="submenu-item"><a href="#">ترکیبات تجاری</a></li>
-                <li class="submenu-item"><a href="#">کپسول قهوه</a></li>
-                <li class="submenu-item"><a href="#">قهوه زینو برزیلی</a></li>
+                <li class="submenu-item"><a href="#" class="dark:text-white">قهوه ویژه</a></li>
+                <li class="submenu-item"><a href="#" class="dark:text-white">ویژه در سطح جهانی</a></li>
+                <li class="submenu-item"><a href="#" class="dark:text-white">قهوه درجه یک</a></li>
+                <li class="submenu-item"><a href="#" class="dark:text-white">ترکیبات تجاری</a></li>
+                <li class="submenu-item"><a href="#" class="dark:text-white">کپسول قهوه</a></li>
+                <li class="submenu-item"><a href="#" class="dark:text-white">قهوه زینو برزیلی</a></li>
               </ul>
             </li>
             <li class="mob_nav-item flex items-center gap-2 pr-[10px]">
@@ -272,11 +275,30 @@
           </ul>
         </section>
         <!-- nav-bottom-section -->
-        <section class="nav-bottom-section"></section>
+        <section class="nav-bottom-section pr-[10px] text-orange-300 flex flex-col gap-6 mt-8">
+          <div>
+            <a href="">
+              <svg class="size-5 inline-block ml-1"><use href="#login"></use></svg>
+              <span>ورود | ثبت نام</span>
+            </a>
+          </div>
+          <div>
+            <button>
+              <svg class="size-5 inline-block ml-1"><use href="#moon"></use></svg>
+              <span>حالت شب</span>  
+            </button>
+          </div>
+          <div>
+            <a href="">
+              <svg class="size-5 inline-block ml-1"><use href="#shoping-card"></use></svg>
+              <span>مکان فروشگاه</span>
+            </a>
+          </div>
+        </section>
     </nav>
 
     <!-- overlay bg  -->
-    <div class="absolute top-0 bottom-0 w-full bg-black/40 backdrop-blur-[0.6px] z-0"></div>
+    <div class="overlay absolute top-0 bottom-0 w-full bg-black/40 backdrop-blur-[0.6px] z-0 opacity-0 invisible"></div>
 
   </header>
 

@@ -36,3 +36,14 @@
   text-decoration: none;
   font-size: 0.8rem;
 }
+
+.open-nav {
+  right: 0 !important;
+  transition: all 0.7s ease;
+  -webkit-transition: all 0.7s ease;
+}
+.close-nav {
+  right: -16rem !important;
+  transition: all 0.7s ease;
+  -webkit-transition: all 0.7s ease;
+}
