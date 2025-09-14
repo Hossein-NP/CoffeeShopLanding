@@ -11,4 +11,28 @@
   -moz-transition: all 0.2s ease;
   -ms-transition: all 0.2s ease;
   -o-transition: all 0.2s ease;
+
+}
+
+.mob_shop-sub {
+  max-height: 0;
+  overflow: hidden;
+  transition: all 1s ease;
+  -webkit-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -ms-transition: all 1s ease;
+  -o-transition: all 1s ease;
+}
+
+.mob_shop-sub.open {
+  max-height: 500px; /* ارتفاع کافی برای همه آیتم‌ها */
+}
+
+.submenu-item a {
+  display: block;
+  padding: 10px 15px;
+  background-color: var(--color-brown-100);
+  color: var(--color-zinc-700);
+  text-decoration: none;
+  font-size: 0.8rem;
 }
