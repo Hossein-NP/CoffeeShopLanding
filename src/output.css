@@ -188,6 +188,9 @@
   .absolute {
     position: absolute;
   }
+  .fixed {
+    position: fixed;
+  }
   .relative {
     position: relative;
   }
@@ -209,11 +212,17 @@
   .bottom-0 {
     bottom: calc(var(--spacing) * 0);
   }
+  .left-0 {
+    left: calc(var(--spacing) * 0);
+  }
   .z-0 {
     z-index: 0;
   }
   .z-10 {
     z-index: 10;
+  }
+  .z-20 {
+    z-index: 20;
   }
   .order-1 {
     order: 1;
