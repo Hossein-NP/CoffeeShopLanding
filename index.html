@@ -181,9 +181,9 @@
 
   <!-- mobile first  -->
   <!-- header  -->
-  <header class="h-16 *:h-full">
+  <header class="h-16 *:h-full ">
 
-    <div class="container mx-auto">
+    <div class="container mx-auto xs:max-w-[40rem]">
       <div class="flex items-center justify-between h-full px-4 py-3">
         <!-- hamburger menu icon  -->
         <div aria-roledescription="hamburger menu" class="hamburger-menu size-6 *:block *:h-[1px] px-0.5 py-1 flex flex-col justify-between *:bg-zinc-700 *:dark:bg-white">
@@ -306,21 +306,21 @@
   <main>
     <!-- hero header  -->
     <div class="hero-header relative xs:h-[200px]">
-      <div class="container mx-auto h-full">
+      <div class="container mx-auto h-full xs:max-w-[40rem]">
         <section class="relative xs:h-full  z-2">
           <div class="hero-header__contentwrapper relative top-[50%] -translate-y-2/4 flex ">
-            <div class="hero-header__contents xs:w-[201px] ml-4">
-              <h1 class="font-morrabe-bold text-2xl text-white leading-8">قهوه عربیکا تانزانیا</h1>
-              <span class="font-morrabe-regular text-xl text-white leading-8">یک فنجان بالانس !</span>
+            <div class="hero-header__contents xs:w-[201px] sm:w-[230px] ml-4">
+              <h1 class="font-morrabe-bold text-2xl sm:text-[28px] text-white leading-8">قهوه عربیکا تانزانیا</h1>
+              <span class="font-morrabe-regular text-xl sm:text-2xl text-white leading-8">یک فنجان بالانس !</span>
               <!-- divider  -->
               <br>
-              <span class="font-dana-regular text-xs text-white leading-4">قطعا نام آشنای عربیکا را شنیده اید، عربیکا یکی از گونه های قهوه است که در نواحی مختلف کمربند قهوه کشت میشود.</span>
+              <span class="font-dana-regular text-xs sm:text-base text-white leading-4">قطعا نام آشنای عربیکا را شنیده اید، عربیکا یکی از گونه های قهوه است که در نواحی مختلف کمربند قهوه کشت میشود.</span>
             </div>
           </div>
         </section>
       </div>
       <!-- hero bg  -->
-      <div class="bg-[url('/Assets/img/headerBgMobile.webp')] bg-cover absolute w-full h-full top-0 z-1"></div>
+      <div class="bg-[url('/Assets/img/headerBgMobile.webp')] bg-cover bg-center aspect-square absolute w-full h-full top-0 z-1"></div>
     </div>
   </main>
 
