@@ -50,6 +50,9 @@
   --font-dana-bold: dana-semibold;
   --font-dana-medium: dana-medium;
   --font-dana-regular: dana-regular;
+  --font-morrabe-bold: Morabba-Bold;
+  --font-morrabe-medium: Morabba-Medium;
+  --font-morrabe-regular: Morabba-Light;
 
   /* colors  */
   --color-brown-900: #634832;
@@ -65,11 +68,21 @@
   --color-divider-light: #F3F4F6;
   --color-divider-dark: #FFFFFF1A;
 
+  /* breakpoints  */
+  --breakpoint-xs: 24rem;
 
+  /* img bg  */
+  --backgroundImage: url()
 }
 
 /* utilities  */
 
 .active {
   @apply text-orange-300 
+}
+
+/* hero header  */
+
+.hero-header__contentwrapper  {
+  justify-content: end;
 }

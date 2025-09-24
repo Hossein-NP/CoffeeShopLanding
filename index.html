@@ -8,7 +8,7 @@
   <link rel="stylesheet" href="./src/output.css">
   <link rel="stylesheet" href="src/app.css">
 </head>
-<body class="h-full">
+<body class="h-full bg-gray-200">
   
   <!-- SVG  -->
   <svg class="hidden">
@@ -183,7 +183,7 @@
   <!-- header  -->
   <header class="h-16 *:h-full">
 
-    <div class="container">
+    <div class="container mx-auto">
       <div class="flex items-center justify-between h-full px-4 py-3">
         <!-- hamburger menu icon  -->
         <div aria-roledescription="hamburger menu" class="hamburger-menu size-6 *:block *:h-[1px] px-0.5 py-1 flex flex-col justify-between *:bg-zinc-700 *:dark:bg-white">
@@ -301,6 +301,28 @@
     <div class="overlay absolute top-0 bottom-0 w-full h-full bg-black/40 backdrop-blur-[0.6px] z-10 opacity-0 invisible"></div>
 
   </header>
+
+  <!-- main  -->
+  <main>
+    <!-- hero header  -->
+    <div class="hero-header relative xs:h-[200px]">
+      <div class="container mx-auto h-full">
+        <section class="relative xs:h-full  z-2">
+          <div class="hero-header__contentwrapper relative top-[50%] -translate-y-2/4 flex ">
+            <div class="hero-header__contents xs:w-[201px] ml-4">
+              <h1 class="font-morrabe-bold text-2xl text-white leading-8">قهوه عربیکا تانزانیا</h1>
+              <span class="font-morrabe-regular text-xl text-white leading-8">یک فنجان بالانس !</span>
+              <!-- divider  -->
+              <br>
+              <span class="font-dana-regular text-xs text-white leading-4">قطعا نام آشنای عربیکا را شنیده اید، عربیکا یکی از گونه های قهوه است که در نواحی مختلف کمربند قهوه کشت میشود.</span>
+            </div>
+          </div>
+        </section>
+      </div>
+      <!-- hero bg  -->
+      <div class="bg-[url('/Assets/img/headerBgMobile.webp')] bg-cover absolute w-full h-full top-0 z-1"></div>
+    </div>
+  </main>
 
   <script src="Assets/js/app.js"></script>
 </body>

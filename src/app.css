@@ -47,3 +47,8 @@
   transition: all 0.7s ease;
   -webkit-transition: all 0.7s ease;
 }
+
+/* Home  */
+.home-bg {
+  background-image: url("../Assets/img/headerBgMobile.webp");
+}
